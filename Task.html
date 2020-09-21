@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+           <div class="col-lg-12">
+               <div class="col-md-6">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#" style="margin-top:10px;font-size:25px;"><i>Robin</i></a>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="People,Offices,Seats..." aria-label="Search" style="margin-top:20px;">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-top:20px;">Advanced Search</button>
+                        </form>
+                    </nav>
+                    <div class="col-md-10" style="font-family: 'Open Sans';">
+                        <br><center><h1><b>Choose a booking</b></h1>
+                        <h4 style="color:#d3d2ca;">The office is full at <a href="" style="text-decoration: none;color:#ff3068;"> 58% today</a></h4></center>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul style="margin:3%;float:right;list-style-type: none;">
+                        <li><button class="button button5"></button></li><br>
+                        <li><button class="button button5"></button></li><br>
+                        <li><button class="button button5"></button></li><br>
+                        <li><button class="button button5"></button></li><br>
+                    </ul>
+                </div>
+                <div>
+                    <div class="col-lg-1">
+                        <ul class="pagination" style="float:left;margin:2%;position: relative;">
+                            <li><button class="button6"></button></li><br>
+                            <li><a href="#" style="border: none;">1</a></li><br>
+                            <li><a href="#" style="border:none;">2</a></li><br>
+                            <li><button class="button6"></button></li>
+                        </ul>
+                    </div>
+                    <div class="row" style="display: flex;">
+                        <div class="col-lg-4">
+                            <div class="card chair">
+                                <div class="card-body">
+                                  <h5 class="card-title"><b>Chair</b></h5>
+                                  <p class="card-text">2nd Floor</p>
+                                </div>
+                            </div><br>
+                            <div class="opn-chair">
+                                <form action="" method="">
+                                    <div class="inner">
+                                        <b><br>Book Time<br><br>
+                                        <button> 9:30 am</button> to 
+                                        <button>7:30 pm</button>
+                                        <br><br><br>Invite</b><br><br>
+                                        <img src="img4.jpg">
+                                        <img src="img.jpg">
+                                        <img src="img_avatar.jpg">
+                                        <br><br><br><b> Busiest times</b>
+                                        <button class="butto"><b>+</b></button2>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card desk">
+                                <div class="card-body">
+                                  <h5 class="card-title"><b>Desk</b></h5>
+                                  <p class="card-text">3rd Floor</p>
+                                </div>
+                            </div><br>
+                            <div class="opn-desk">
+                                <form action="" method="">
+                                    <div class="inner">
+                                        <b><br>Book Time<br><br>
+                                        <button> 1:30 pm</button> to 
+                                        <button>5:30 pm</button>
+                                        <br><br><br>Invite</b><br><br>
+                                        <img src="img_avatar.jpg">
+                                        <img src="img4.jpg">
+                                        <img src="img.jpg">
+                                        <br><br><br><b> Busiest times</b>
+                                        <button class="butto"><b>+</b></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card conf">
+                                <div class="card-body">
+                                  <h5 class="card-title"><b>Conference Hall</b></h5>
+                                  <p class="card-text">4th Floor</p>
+                                </div>
+                            </div><br>
+                            <div class="opn-conf">
+                                <form action="" method="">
+                                    <div class="inner">
+                                        <b><br>Book Time<br><br>
+                                        <button> 8:30 am</button> to 
+                                        <button>9:30 pm</button>
+                                        <br><br><br>Invite</b><br><br>
+                                        <img src="img.jpg">
+                                        <img src="img_avatar.jpg">
+                                        <img src="img4.jpg">
+                                        <br><br><br><b> Busiest times</b>
+                                        <button class="butto"><b>+</b></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    $(function(){
+    
+    $('.chair').click(function(){
+    $('.opn-chair').slideToggle();
+    });
+    
+$('.desk').click(function(){
+$('.opn-desk').slideToggle();
+});
+
+$('.conf').click(function(){
+$('.opn-conf').slideToggle();
+});
+    });
+</script>
